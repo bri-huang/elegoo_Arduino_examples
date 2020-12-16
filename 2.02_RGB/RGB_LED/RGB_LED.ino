@@ -5,6 +5,12 @@
 #define BLUE 3
 #define GREEN 5
 #define RED 6
+#define delayTime 10 // fading time between colors
+
+// define variables
+int redValue;
+int greenValue;
+int blueValue;
 
 void setup()
 {
@@ -16,15 +22,9 @@ void setup()
   digitalWrite(BLUE, LOW);
 }
 
-// define variables
-int redValue;
-int greenValue;
-int blueValue;
-
 // main loop
 void loop()
 {
-#define delayTime 10 // fading time between colors
 
   redValue = 255; // choose a value between 1 and 255 to change the color.
   greenValue = 0;
